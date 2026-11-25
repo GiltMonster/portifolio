@@ -1,0 +1,29 @@
+{
+    "name": "lucassc/portfolio",
+    "description": "Portfólio de Lucas Santos com demonstrações interativas.",
+    "type": "project",
+    "require": {
+        "php": "^8.4.1",
+        "laravel/framework": "^13.0"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "platform": {
+            "php": "8.4.1"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
